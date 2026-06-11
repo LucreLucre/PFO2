@@ -1,5 +1,7 @@
 # PFO 2 FRONT END
 ## Lucrecia Vigo (2º E)
+### Link al deploy unificado:
+https://pfo-2.vercel.app/
 ### Prompt utilizado:
 ROL
 Actuá como un desarrollador Frontend Senior, diseñador UX/UI y arquitecto de software con amplia experiencia en creación de sitios web profesionales.
