@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nova Solutions — Soluciones tecnológicas para pequeñas y medianas empresas. Desarrollo web, apps móviles, APIs y consultoría.">
+  <title>Nova Solutions | Transformación Digital para tu Empresa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Nova Solutions — Inicio">
+        <span class="logo__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+            <path d="M8 22L16 8L24 22H8Z" fill="white" fill-opacity="0.9"/>
+            <circle cx="16" cy="18" r="3" fill="white"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                <stop stop-color="#3B82F6"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo__text">Nova <strong>Solutions</strong></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+          <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge">Tecnología que impulsa negocios</span>
+          <h1 class="hero__title" id="hero-title">
+            Impulsamos la <span class="text-gradient">transformación digital</span> de tu empresa
+          </h1>
+          <p class="hero__subtitle">
+            Diseñamos y desarrollamos soluciones tecnológicas a medida para que tu PYME compita con las grandes empresas. Más de 8 años acompañando a negocios en su evolución digital.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">Solicitar una consulta</a>
+            <a href="#servicios" class="btn btn--secondary">Conocer más</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-number">120+</span>
+              <span class="hero__stat-label">Proyectos entregados</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">98%</span>
+              <span class="hero__stat-label">Clientes satisfechos</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">24/7</span>
+              <span class="hero__stat-label">Soporte técnico</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__illustration">
+            <div class="hero__card hero__card--main">
+              <div class="hero__card-header">
+                <span class="hero__card-dot hero__card-dot--red"></span>
+                <span class="hero__card-dot hero__card-dot--yellow"></span>
+                <span class="hero__card-dot hero__card-dot--green"></span>
+              </div>
+              <div class="hero__card-body">
+                <div class="hero__code-line hero__code-line--1"></div>
+                <div class="hero__code-line hero__code-line--2"></div>
+                <div class="hero__code-line hero__code-line--3"></div>
+                <div class="hero__code-line hero__code-line--4"></div>
+              </div>
+            </div>
+            <div class="hero__card hero__card--float hero__card--top">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#3B82F6" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="#06B6D4" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="#3B82F6" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+              <span>API Integrada</span>
+            </div>
+            <div class="hero__card hero__card--float hero__card--bottom">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="5" y="2" width="14" height="20" rx="2" stroke="#3B82F6" stroke-width="2"/>
+                <line x1="12" y1="18" x2="12" y2="18.01" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>App Móvil</span>
+            </div>
+            <div class="hero__orbit">
+              <div class="hero__orbit-ring"></div>
+              <div class="hero__orbit-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="section about" id="nosotros" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Quiénes somos</span>
+          <h2 class="section__title" id="about-title">Sobre Nosotros</h2>
+          <p class="section__description">
+            En Nova Solutions combinamos experiencia técnica y visión de negocio para entregar soluciones que generan resultados reales. Somos el socio tecnológico que tu empresa necesita para crecer en el mundo digital.
+          </p>
+        </div>
+        <div class="about__grid">
+          <article class="about__card">
+            <div class="about__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="about__card-title">Misión</h3>
+            <p class="about__card-text">
+              Democratizar el acceso a tecnología de alto nivel para pequeñas y medianas empresas, entregando soluciones escalables, seguras y alineadas con sus objetivos de crecimiento.
+            </p>
+          </article>
+          <article class="about__card">
+            <div class="about__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="about__card-title">Visión</h3>
+            <p class="about__card-text">
+              Ser la consultora tecnológica de referencia en Latinoamérica, reconocida por transformar negocios tradicionales en organizaciones digitales competitivas y sostenibles.
+            </p>
+          </article>
+          <article class="about__card">
+            <div class="about__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1675 4.55232C18.712 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.712 8.75608 18.1675 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="about__card-title">Valores</h3>
+            <p class="about__card-text">
+              Innovación constante, transparencia en cada proyecto, compromiso con la calidad y un enfoque centrado en las personas. Construimos relaciones de confianza a largo plazo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section services" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Lo que hacemos</span>
+          <h2 class="section__title" id="services-title">Nuestros Servicios</h2>
+          <p class="section__description">
+            Ofrecemos un portafolio integral de servicios tecnológicos diseñados para resolver los desafíos reales de tu negocio, desde la presencia digital hasta la automatización de procesos.
+          </p>
+        </div>
+        <div class="services__grid">
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Desarrollo Web</h3>
+            <p class="service-card__text">
+              Creamos sitios web y plataformas corporativas modernas, rápidas y optimizadas para SEO. Desde landing pages hasta portales empresariales con panel de administración.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="8" y1="2" x2="8" y2="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="16" y1="2" x2="16" y2="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Aplicaciones Móviles</h3>
+            <p class="service-card__text">
+              Desarrollamos apps nativas e híbridas para iOS y Android que conectan tu marca con clientes en cualquier momento. Experiencias fluidas, intuitivas y de alto rendimiento.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M10 13L14 9L10 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 9H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M14 19H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M21 19H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M21 15H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M21 11H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Integración de APIs</h3>
+            <p class="service-card__text">
+              Conectamos tus sistemas con servicios externos — pagos, CRM, ERP, logística — para automatizar flujos de trabajo y eliminar tareas manuales repetitivas.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M14.7 6.3C15.1 5.9 15.1 5.3 14.7 4.9C14.3 4.5 13.7 4.5 13.3 4.9L12 6.2L10.7 4.9C10.3 4.5 9.7 4.5 9.3 4.9C8.9 5.3 8.9 5.9 9.3 6.3L10.6 7.6L9.3 8.9C8.9 9.3 8.9 9.9 9.3 10.3C9.7 10.7 10.3 10.7 10.7 10.3L12 9L13.3 10.3C13.7 10.7 14.3 10.7 14.7 10.3C15.1 9.9 15.1 9.3 14.7 8.9L13.4 7.6L14.7 6.3Z" fill="currentColor"/>
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Software a Medida</h3>
+            <p class="service-card__text">
+              Diseñamos sistemas personalizados que se adaptan a los procesos únicos de tu empresa: inventarios, facturación, gestión de equipos y mucho más.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8 9H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 13H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Consultoría Tecnológica</h3>
+            <p class="service-card__text">
+              Asesoramos en la definición de estrategias digitales, selección de tecnologías y optimización de infraestructura para maximizar el retorno de tu inversión tecnológica.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section testimonials" id="testimonios" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Confianza</span>
+          <h2 class="section__title" id="testimonials-title">Lo que opinan nuestros clientes</h2>
+          <p class="section__description">
+            La satisfacción de nuestros clientes es nuestra mejor carta de presentación. Esto es lo que dicen quienes ya confiaron en nosotros.
+          </p>
+        </div>
+        <div class="testimonials__grid">
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="Calificación: 5 de 5 estrellas">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              <p>"Nova Solutions transformó por completo nuestra operación digital. En tres meses teníamos un e-commerce funcional que incrementó nuestras ventas online en un 40%. Su equipo es profesional, comunicativo y siempre cumple los plazos."</p>
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
+              <div>
+                <cite class="testimonial-card__name">María Rodríguez</cite>
+                <span class="testimonial-card__company">Directora, Boutique Estilo Urbano</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="Calificación: 5 de 5 estrellas">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              <p>"La integración de APIs que desarrollaron nos ahorró más de 20 horas semanales en tareas administrativas. El sistema conecta nuestro inventario, facturación y envíos de forma automática. Una inversión que se pagó sola en dos meses."</p>
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">CG</div>
+              <div>
+                <cite class="testimonial-card__name">Carlos Gutiérrez</cite>
+                <span class="testimonial-card__company">Gerente General, LogiExpress S.A.</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="Calificación: 5 de 5 estrellas">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              <p>"Contratamos a Nova para desarrollar nuestra app móvil y quedamos impresionados con la calidad del producto final. La interfaz es intuitiva, el rendimiento es excelente y el soporte post-lanzamiento ha sido impecable."</p>
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">AL</div>
+              <div>
+                <cite class="testimonial-card__name">Ana López</cite>
+                <span class="testimonial-card__company">CEO, FitVida App</span>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <span class="section__eyebrow">Hablemos</span>
+            <h2 class="section__title" id="contact-title">Contáctanos</h2>
+            <p class="contact__description">
+              ¿Listo para llevar tu negocio al siguiente nivel? Cuéntanos sobre tu proyecto y un especialista te responderá en menos de 24 horas hábiles.
+            </p>
+            <ul class="contact__details">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                  <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <a href="mailto:contacto@novasolutions.com">contacto@novasolutions.com</a>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.73 20.99 20.46 21 20.18 21C10.6 21 3 13.4 3 3.82C3 3.54 3.01 3.27 3.03 3C3.07 2.44 3.52 2 4.08 2H7.08C7.56 2 7.97 2.35 8.04 2.82C8.11 3.39 8.24 3.95 8.43 4.49C8.56 4.87 8.47 5.29 8.2 5.59L6.91 7.04C8.55 10.13 11.87 13.45 14.96 15.09L16.41 13.8C16.71 13.53 17.13 13.44 17.51 13.57C18.05 13.76 18.61 13.89 19.18 13.96C19.65 14.03 20 14.44 20 14.92V17.92" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="tel:+34900123456">+34 900 123 456</a>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Madrid, España</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre <span class="form-required" aria-hidden="true">*</span></label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre completo" required autocomplete="name">
+              <span class="form-error" id="error-nombre" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Correo electrónico <span class="form-required" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="tu@empresa.com" required autocomplete="email">
+              <span class="form-error" id="error-email" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="empresa" class="form-label">Empresa</label>
+              <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nombre de tu empresa" autocomplete="organization">
+              <span class="form-error" id="error-empresa" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="mensaje" class="form-label">Mensaje <span class="form-required" aria-hidden="true">*</span></label>
+              <textarea id="mensaje" name="mensaje" class="form-input form-textarea" placeholder="Cuéntanos sobre tu proyecto o consulta..." rows="5" required></textarea>
+              <span class="form-error" id="error-mensaje" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p>¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--footer" aria-label="Nova Solutions — Inicio">
+          <span class="logo__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="url(#logoGradFooter)"/>
+              <path d="M8 22L16 8L24 22H8Z" fill="white" fill-opacity="0.9"/>
+              <circle cx="16" cy="18" r="3" fill="white"/>
+              <defs>
+                <linearGradient id="logoGradFooter" x1="0" y1="0" x2="32" y2="32">
+                  <stop stop-color="#3B82F6"/>
+                  <stop offset="1" stop-color="#06B6D4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="logo__text">Nova <strong>Solutions</strong></span>
+        </a>
+        <p class="footer__description">
+          Soluciones tecnológicas innovadoras para pequeñas y medianas empresas. Transformamos ideas en productos digitales que impulsan el crecimiento de tu negocio.
+        </p>
+      </div>
+      <div class="footer__social">
+        <h3 class="footer__social-title">Síguenos</h3>
+        <ul class="footer__social-list">
+          <li>
+            <a href="https://facebook.com" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7.5C14 7.10218 14.158 6.72064 14.4393 6.43934C14.7206 6.15804 15.1022 6 15.5 6H18V2Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25H21.308L14.554 10.51L22.5 21.75H16.106L10.916 14.933L4.95 21.75H1.884L9.112 12.915L1.5 2.25H8.046L12.753 8.481L18.244 2.25ZM17.083 19.77H18.916L7.084 4.126H5.117L17.083 19.77Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="currentYear"></span> Nova Solutions. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

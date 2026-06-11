@@ -1,0 +1,196 @@
+:root {
+  --bg: #0f172a;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-card-hover: rgba(255, 255, 255, 0.08);
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #3b82f6;
+  --accent-2: #06b6d4;
+  --accent-3: #0f8b8d;
+  --border: rgba(148, 163, 184, 0.2);
+  --radius: 16px;
+  --shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(59, 130, 246, 0.18), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 80% 80%, rgba(6, 182, 212, 0.14), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(15, 139, 141, 0.08), transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.portada {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.portada__header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 640px;
+}
+
+.portada__badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  border-radius: 999px;
+}
+
+.portada__nombre {
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.portada__subtitulo {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.portada__links {
+  display: grid;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 720px;
+}
+
+.link-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.link-card:hover,
+.link-card:focus-visible {
+  background: var(--bg-card-hover);
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  outline: none;
+}
+
+.link-card__numero {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+}
+
+.link-card:nth-child(2) .link-card__numero {
+  background: linear-gradient(135deg, #0f8b8d, #06b6d4);
+}
+
+.link-card:nth-child(3) .link-card__numero {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+}
+
+.link-card__contenido {
+  flex: 1;
+  min-width: 0;
+}
+
+.link-card__titulo {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.link-card__desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.link-card__flecha {
+  flex-shrink: 0;
+  align-self: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--text-muted);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.link-card:hover .link-card__flecha,
+.link-card:focus-visible .link-card__flecha {
+  color: var(--accent-2);
+  transform: translateX(4px);
+}
+
+.portada__footer {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .link-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .link-card__flecha {
+    display: none;
+  }
+}
